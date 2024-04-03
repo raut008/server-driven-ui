@@ -1,5 +1,8 @@
+import { useAuth } from "@/hooks/useAuth";
 import "@/styles/globals.css";
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
+
+export default useAuth(App);
